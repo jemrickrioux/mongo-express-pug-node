@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .card.py-3
+      .card-title
+        if message
+          h1 Sign In
+          p #{message}
+        else
+          h1 Sign In
+      .card-body
+        form(action = "/signin" method = "POST")
+          .form-group
+            input(name= "logemail" type = "text" required placeholder = "email@email.com")
+            input(name= "logpassword" type = "password" required placeholder="Password")
+            button.btn.btn-warning(type="submit") Login

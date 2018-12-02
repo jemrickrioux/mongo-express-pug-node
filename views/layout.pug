@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    include includes/head.pug
+  body
+    .container.main-container.mt-3
+      .row
+        .col
+          block content
+      .row
+        include includes/credits.pug

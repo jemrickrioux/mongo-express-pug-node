@@ -1,0 +1,44 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.row {
+  display: flex;
+}
+
+#metric-card {
+  height: auto;
+  width: auto;
+  margin: 0.5em;
+  padding: 0.25em
+}
+
+.body-card {
+  margin: 0.5em;
+  padding: 0.25em
+}
+
+.main-container {
+  border: 0px solid black;
+  height: 600px;
+}
+
+
+/* Copyrights*/
+
+.copyrights {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  text-align: center;
+}
