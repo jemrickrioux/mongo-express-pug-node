@@ -31,8 +31,8 @@ Simply require the config object in a variable named how you like. (I named it '
 var config = require('./config.js')
 
 [...]
-// Render the template named index and assign the value of config.title to the title property of that template.
 
+// Render the template named index and assign the value of config.title to the title property of that template.
 return res.render({title: config.title}, 'index')
 ```
 
