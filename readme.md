@@ -4,6 +4,14 @@
 ### Installing the and starting the stack
 `
 $ git clone https://github.com/jelecool/mongo-express-pug-node
+`
+---
+`
 $ npm install
+`
+---
+`
 $ npm start
 `
+---
+
