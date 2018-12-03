@@ -10,6 +10,7 @@ var config = require('./config');
 var indexRouter = require('./routes/index');
 var signupRouter = require('./routes/signup');
 var signinRouter = require('./routes/signin');
+var signoutRouter = require('./routes/signout');
 var protectedRouter = require('./routes/profile');
 
 
@@ -37,12 +38,13 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({secret: "123456"}));
+app.use(session({secret: config.jwtSecret}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/signup', signupRouter);
 app.use('/signin', signinRouter);
+app.use('/signout', signoutRouter);
 app.use('/profile', protectedRouter);
 
 // catch 404 and forward to error handler

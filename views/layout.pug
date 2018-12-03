@@ -8,5 +8,10 @@ html
       .row
         .col
           block content
+      if (isSignedIn)
+        .row
+          .col
+            p.lead
+            include includes/signoutbtn.pug
       .row
         include includes/credits.pug
